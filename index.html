@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>リスニングテスト：抜けている単語のディクテーション</title>
+  <meta name="description" content="音声を聞いて、英文のカッコ内に入る英語の語句を書き取るディクテーションテストです。" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- OGP とかは後で足すならここに -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>リスニングテスト：抜けている単語のディクテーション</h1>
+    <p class="description">
+      音声を再生して聞き取り、問題文の（　）内に入る英語の語句を入力してください。<br>
+      ※大文字・小文字の違いは判定に影響しません。<br>
+      ※複数語の場合は、半角スペースで区切って入力してください（例：<code>love to do</code>）。
+    </p>
+
+    <div id="quiz-area">
+      <div id="progress" class="progress">第 1 問 / 10 問</div>
+
+      <p id="sentence" class="sentence"></p>
+
+      <button id="playBtn" class="btn primary">▶ 音声を再生する</button>
+      <audio id="audio"></audio>
+
+      <div class="answer-area">
+        <label for="answerInput">カッコ内の英語：</label>
+        <input id="answerInput" type="text" autocomplete="off" />
+      </div>
+
+      <button id="checkBtn" class="btn">正解を確認する</button>
+
+      <div id="result" class="result"></div>
+
+      <button id="nextBtn" class="btn secondary" style="display: none;">次の問題へ</button>
+    </div>
+
+    <div id="final-area" style="display: none;">
+      <h2>テスト結果</h2>
+      <p id="finalScore"></p>
+      <p id="finalComment"></p>
+      <button id="retryBtn" class="btn">もう一度挑戦する</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
