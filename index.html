@@ -2,35 +2,36 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>ディクテーションゲーム | 英語力を鍛えるWebゲーム集</title>
-  <meta name="description" content="音声を聞いて、英文のカッコ内に入る英語の語句を書き取るディクテーションテストです。" />
+  <title>英語力診断ツール（リスニング） | 抜けている単語のディクテーション</title>
+
+  <meta name="description" content="英語が伸びない原因の一つである「音声の聞き取り力（音声知覚）」を診断する無料ディクテーションテスト。音声を聞いてカッコ内の英語フレーズを書き取り、抜けている単語をどれだけ正確に聞き取れるかをチェックできます。" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://dictation-game.netlify.app/" />
+  <link rel="canonical" href="https://dictation-test.netlify.app/" />
 
   <!-- OGP -->
-  <meta property="og:title" content="英語ディクテーション｜抜けている単語のリスニングテスト" />
-  <meta property="og:description" content="音声を聞いてカッコ内の英語フレーズを書き取るディクテーションテスト。音の変化（連結・消失・弱形・フラップT）に特化した無料リスニングトレーニングです。" />
+  <meta property="og:title" content="英語力診断ツール（リスニング）｜抜けている単語のディクテーション" />
+  <meta property="og:description" content="音声を聞いてカッコ内の英語フレーズを書き取るディクテーション形式のリスニング診断。音の変化（連結・消失・弱形・フラップT）をどれだけ聞き取れているかをチェックできる無料テストです。" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dictation-game.netlify.app/" />
-  <meta property="og:image" content="https://dictation-game.netlify.app/ogp.png" />
-  <meta property="og:site_name" content="英語ディクテーションゲーム" />
+  <meta property="og:url" content="https://dictation-test.netlify.app/" />
+  <meta property="og:image" content="https://dictation-test.netlify.app/ogp.png" />
+  <meta property="og:site_name" content="英語力診断ツール（リスニング）" />
   <meta property="og:locale" content="ja_JP" />
 
   <!-- Twitterカード -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="英語ディクテーション｜抜けている単語のリスニングテスト" />
-  <meta name="twitter:description" content="音声を聞いてカッコ内の英語フレーズを書き取るディクテーションテスト。音の変化に特化した無料リスニングトレーニングです。" />
-  <meta name="twitter:image" content="https://dictation-game.netlify.app/ogp.png" />
+  <meta name="twitter:title" content="英語力診断ツール（リスニング）｜抜けている単語のディクテーション" />
+  <meta name="twitter:description" content="音声を聞いてカッコ内の英語フレーズを書き取るディクテーション形式のリスニング診断。音声知覚と音の変化の聞き取りをチェックし、英語が伸びない原因の一つを可視化します。" />
+  <meta name="twitter:image" content="https://dictation-test.netlify.app/ogp.png" />
 
   <!-- 構造化データ（Webアプリとして） -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "英語ディクテーション｜抜けている単語のリスニングテスト",
-    "url": "https://dictation-game.netlify.app/",
-    "description": "音声を聞いて英文のカッコ内に入る英語の語句を書き取るディクテーションテスト。音の変化に特化したリスニングトレーニング用Webアプリ。",
+    "name": "英語力診断ツール（リスニング）｜抜けている単語のディクテーション",
+    "url": "https://dictation-test.netlify.app/",
+    "description": "音声を聞いて英文のカッコ内に入る英語の語句を書き取るディクテーション形式のリスニング診断テスト。音声の聞き取り力（音声知覚）や音の変化への対応力をチェックできる英語力診断用Webアプリ。",
     "applicationCategory": "EducationalApplication",
     "inLanguage": "ja",
     "operatingSystem": "any"
@@ -43,6 +44,8 @@
   <div class="container">
     <h1>リスニングテスト：抜けている単語のディクテーション</h1>
     <p class="description">
+      このテストは、英語が伸びない原因の一つである<br>
+      <strong>「音声を正しく聞き取る力（音声知覚）」</strong>を診断するためのリスニングテストです。<br><br>
       音声を再生して聞き取り、問題文の（　）内に入る英語の語句を入力してください。<br>
       ※大文字・小文字の違いは判定に影響しません。<br>
       ※複数語の場合は、半角スペースで区切って入力してください（例：<code>love to do</code>）。
@@ -78,7 +81,54 @@
 
   <script src="script.js"></script>
 </body>
+<section class="section">
+  <div class="section-header">
+    <h2>このリスニング診断で分かること</h2>
+  </div>
+  <div class="section-body">
+    <p>
+      ディクテーションは、英語リスニングの中でも特に基礎となる
+      <strong>「音声知覚（音をそのまま認識する能力）」</strong>
+      を測るのに最適なテストです。
+    </p>
+
+    <ul>
+      <li><strong>音の変化（連結・消失・弱形など）をどれだけ聞き取れているか</strong></li>
+      <li><strong>知っている単語を、音として認識できているか</strong></li>
+      <li><strong>聞いた音声を文字として取り出すスピード</strong></li>
+      <li>リスニングの「どこで」つまずいているのかの傾向</li>
+    </ul>
+
+    <p>
+      これらは、一般的な英会話レッスンや単語学習では気づきにくい要素ですが、
+      英語が伸び悩む大きな原因になりやすいポイントです。
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <h2>おすすめの活用方法</h2>
+  </div>
+  <div class="section-body">
+    <ul>
+      <li>1回目は「実力チェック」として普段通り解く</li>
+      <li>2回目は「正解を聞いた後」に音の変化を意識して再挑戦</li>
+      <li>正解だけでなく、<strong>「なぜ聞き取れなかったか」</strong>を分析する</li>
+      <li>聞き取れなかった単語・フレーズをメモし、スキマ時間で復習する</li>
+    </ul>
+
+    <p>
+      特に、意外と多いのが
+      <strong>「知っている単語なのに音で認識できていない」</strong>
+      というケースです。
+      これは学習方法を少し変えるだけで改善しやすいポイントなので、
+      テスト結果を参考にして学習の方向性を見直してみてください。
+    </p>
+  </div>
+</section>
+
 <div class="back-home-container">
-  <a href="https://english-learning-games.netlify.app/" class="back-home-btn">← ホームへ戻る</a>
+  <a href="https://diagnosis-for-english-learners.netlify.app/" class="back-home-btn">← ホームへ戻る</a>
 </div>
 </html>
